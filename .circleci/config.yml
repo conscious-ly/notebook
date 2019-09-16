@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: ls -l 
-      - run: apt install sshpass
+      - run: apt update && apt install sshpass
