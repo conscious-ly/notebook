@@ -5,4 +5,5 @@ jobs:
       - image: ubuntu:18.04
     steps:
       - checkout
-      - run: echo "todo set up scp"
+      - run: ls -l 
+      - run: apt install sshpass
