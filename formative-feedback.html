@@ -30,7 +30,7 @@
 
 
 
-  <title>High-fidelity Prototype | Conscious.ly</title>
+  <title>Formative Feedback | Conscious.ly</title>
 </head>
 
   <body>
@@ -190,7 +190,7 @@
         <span class="text">High-fidelity Prototype</span>
       </a>
     </li>
-    
+
     <li class="pattern">
       <a href="formative-feedback.html">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
@@ -208,50 +208,10 @@
         <div>
 
   <main id="main">
-    <h1>High-fidelity Prototype</h1>
+    <h1>Formative Feedback</h1>
 
-    <h3>Design Evolution</h3>
-    <p>During our low-fidelity (paper) prototype testing stage, we received some feedback on our design. Based on that, we made
-    the following changes to our high fidelity (computer) prototype:</p>
-
-    <ul>
-      <li><b>Moveable Widget</b></li> We received feedback saying that the Conscious.ly icon in the corner of the screen during an active session (i.e. while
-      a task is in progress) is somewhat obstructive, and that we should move it into the task bar. We decided that something
-      in the task bar may not be a present enough reminder and instead, we decided to make it so that the widget can be moved
-      around the screen. This inspiration was taken from Facebook Messenger’s chathead bubble feature on Android devices.
-
-      <li><b>Dynamic Settings</b></li> During our lo-fi prototype test, we did not have test subjects set their preferences (i.e. set which apps/websites they
-      considered distracting). Instead, we told them to assume they had already done so; that it would be part of the
-      installation of the app rather than an everyday function. Based on the subjects’ very valid feedback, we decided to make
-      the settings dynamic; they can now be customized at any time. This allows change, but also covers the use case in which
-      a user downloads a new application or finds a new distracting website after they have already installed and set up our
-      app.
-
-      <li><b>Positive Reinforcement</b></li> Some of our test subjects said that they would have liked some sort of reward or positive reinforcement for not getting
-      distracted, such as a congratulatory message. We saw that as a low-effort, high-value feature, and have made it such
-      that whenever a user selects “No” in response to the question “Are you sure you want to be distracted?” (which pops up
-      when then open a distracting application/website), they get a short positive message of congrats.
-
-      <li><b>Add Guilt & Difficulty</b></li> Almost all of our test subjects said that our “Are you sure you want to be distracted?” popup was too guilt-free and too
-      easy to bypass, so we decided to add a second step if the user decides to answer “Yes”: they must solve a mental math
-      question before they can access the distractive app/website. Note that we have currently only successfully implemented
-      this in the desktop prototype; it is a work in progress for the mobile version.
-
-    </ul>
-    <h3>Prototype Implementation</h3>
-
-    <p>For both desktop and mobile versions, clone the repository and follow the instructions in the <i>`README.md`</i> to get up and running.</p>
-
-    <ul>
-      <li><b><i><a href="https://github.com/conscious-ly/desktop-client">Desktop Client:</a></i></b></li> Runs on all desktop environments, but only tested on Ubuntu. Browser support is also only limited to Chrome, and will likely remain so for the duration of the prototyping phase.
-
-      <li><b><i><a href="https://github.com/conscious-ly/app">Mobile Client:</a></b></i></li> Runs only on Android; however can be emulated on a desktop.
-    </ul>
-
-    <p>Note that due to time constraints, support for session syncing across devices as suggested in the proposal is yet to be
-    supported.</p>
-
-    <h3>User Manual and Test Materials</h3>
+    <h3>Testing</h3>
+    <p>Haha</p>
     <ol>
       <li><a href="images/low-fidelity-prototype/ethics-consent-form.pdf">User Consent Form</a></li>
       <li><a href="images/low-fidelity-prototype/observer-briefing.pdf">Observer Briefing Document</a></li>
@@ -263,135 +223,18 @@
       <li><a href="https://forms.gle/7df7QqbBaCK5B5Pr7">Post-Test Questionnaire (Live)</a></li>
     </ol>
 
-    <h3>User Population</h3>
+    <h3>Results and Analysis</h3>
 
-    <p>Conscious.ly’s user base will be primarily populated by individuals who are seeking to use their time more efficiently.
-    In a modern society in which almost everything is immediately accessible, people have become increasingly distracted.
-    These distractions lead people away from the goals they set out to accomplish and can prevent them from achieving
-    distinction in their given task. For those individuals who seek to find a more fulfilling use of their time but are
-    easily distracted, Concious.ly provides a platform through which they will be encouraged to stay on track and accomplish
-    their goals. However, if they do choose to deviate from their goals and be distracted, they will be required to
-    explicitly admit to doing so, making it a conscious decision rather than something they can “unknowingly” fall victim
-    to.</p>
+    <video width="640" height="480" controls>
+      <source src="https://drive.google.com/uc?export=download&confirm=9wBX&id=1pevdxV6MrHDWdF6qPPlYsN71i_k2z7vb" type='video/mp4'>
+      ( If the video player does not show, this message will display. You can still view the video at https://drive.google.com/open?id=1pevdxV6MrHDWdF6qPPlYsN71i_k2z7vb )
+    </video>
+        
+    <h3>Test Plan Critique</h3>
 
-    <p>In our Project Proposal, we described and named five user groups who may benefit from the app. Here, we narrow it down,
-    creating a new list of user populations with which we wish high-fidelity prototype testing to be carried out.</p>
+    <h3>Design Critique</h3>
 
-    <ul>
-      <li>For those individuals that fall under our Social Butterfly moniker, Conscious.ly provides an outlet in which they will
-      have to go through steps in order to deviate from the work at hand. This will more accurately put in perspective the
-      costs and benefits of talking to friends as opposed to working productively.</li>
-      <li>While an individual who falls under the tag of Utilitarian may use the extraneous functions of their devices
-      infrequently, they often seek out systems which promote productivity. Our app not only allows them to exercise
-      willpower, but also backs up their lifestyle choices, further protecting them from harmful distractions.</li>
-      <li>The people who fall under our Relaxed persona generally enjoy spending their time frivolously on various online
-      activities. Given feedback from some of our lo-fi prototype test subjects, most of the Relaxed individuals want to use
-      their time more effectively, but are often unable to due to the prevalent distractions at their fingertips. These
-      individuals will be able to use Conscious.ly to deviate from the distractions that govern their life and allow them to
-      prosper in activities that are required of them.</li>
-      <li>Those individuals that we called Multi-Taskers will find our app extremely useful, because it will allow them to become
-      better at focusing on a single task at any given time. It is proven that trying to accomplish multiple tasks at once is
-      highly inefficient, therefore improving this skill will not only help them overcome their frenzied nature, but also help
-      them become more effective at each task they complete.</li>
-    </ul>
-
-    <p>Originally, we had a fifth type of user (the Goal-Orientated). Upon further examination, we realised that since this
-    user group rarely deviates from the goal at hand, their distractions are limited. While this group is more than welcome
-    to enjoy the use of Conscious.ly, they are not the target audience segment, and instead are the group that Conscious.ly
-    will help its other users merge into.</p>
-
-    <h3>Usability Goals & Reporting</h3>
-
-    <p>Below are the usability goals we aim to test, which can be measured and given a score of either 1, 2, or 3. Use the Data
-    Collection google form link above to record data both during the test (goals 1 and 2) and after it has been completed
-    (goals 3 and 4). Once all the data has been recorded, Google provides reports that allow you to see each question’s
-    results per user and also as a summary of all users. As the design team, you are expected to look for particular
-    interest points or patterns in these results, and decide how complicated certain features were and how useful the app is
-    overall.</p>
-
-    <ol>
-      <li>The user should be able to operate the app effectively with minimalistic instructions:
-        <ul>
-          <li>As soon as the test begins, ask the users the following tasks, and count the number of times a user asks instructions
-          during each of them. Give them a score (for each) as described below:</li>
-
-          <p>(1 = No user instructions required)</p>
-          <p>(2 = One hint required)</p>
-          <p>(3 = More than one hint or full set of instructions required)</p>
-
-          <ul>
-            <li>Ask the user to start a task for 10 minutes</li>
-            <li>Ask the user to set preferences (i.e. outline their typical distractions) using the app</li>
-            <li>Ask the user to check how much time they have remaining without leaving their work</li>
-
-            <p>-------Test next usability goal before asking them to perform the task below-------</p>
-
-            <li>Ask the user to exit the app when the time is up</li>
-          </ul>
-
-        </ul>
-      </li>
-
-      <li>
-        The system should curb ineffective time management
-        <ul>
-          <li>
-            Let the user use the app without direction until the set 10 minutes are up (i.e. do not ask them to do anything during
-            this time)
-          </li>
-
-          <p>(1 = The user is solely focused on the task at hand for the 10 minutes)</p>
-          <p>(2 = The user is somewhat distracted in the 10 minutes (0-4 minutes))</p>
-          <p>(3 = The user is completely distracted in the first 10 minutes (4+ minutes))</p>
-        </ul>
-      </li>
-
-      <li>
-        The system should lack intrusion
-        <ul>
-          <li>Post test, ask the user how distracting they felt the app was</li>
-
-          <p>(1 = The user feels as though the app does not serve as a distraction)</p>
-          <p>(2 = The user feels that the app, while having a positive focus, sometimes causes further distraction)</p>
-          <p>(3 = The user feels that the app is disruptive, restricting their ability to accomplish work)</p>
-
-        </ul>
-      </li>
-
-      <li>
-        The system should satisfy the user and accrue long term clientele
-        <ul>
-          <li>Post test, ask the user how often they would use the app, if at all</li>
-
-          <p>(1 = The user will use the application in everyday life and feels it will allow them to be more productive)</p>
-          <p>(2 = The user will use the application only on certain days with high work volume but doesn’t appreciate its value
-          constantly)</p>
-          <p>(3 = The user finds the application to be redundant or lacking in value; will not be returning to the app in the future)</p>
-        </ul>
-      </li>
-    </ol>
-
-    <h3>Usability Evaluation</h3>
-
-    <p>The following are the usability evaluation criteria that will be assesed, in order of importance:</p>
-
-    <ul>
-      <li><b>User Control and Freedom</b></li>
-      <p>(3) - The user feels completely at ease using the system</p>
-      <p>(2) - The user feels a bit constrained while using the system</p>
-      <p>(1) - The user feels very constrained while using the system</p>
-
-      <li><b>Aesthetic and Minimalistic Design</b></li>
-      <p>(3) - The user finds the design appealing and unobstructive</p>
-      <p>(2) - The user finds the design somewhat appealing and unobstructive</p>
-      <p>(1) - The user finds the design unappealing and obstructive</p>
-
-      <li><b>Visibility of System Status</b></li>
-      <p>(3) - The system staus is always transparent to the user</p>
-      <p>(2) - The system status is sometimes transparent to the user</p>
-      <p>(1) - The system status is obscured</p>
-
-    </ul>
+    <p>C.</p>
 
   </main>
 
