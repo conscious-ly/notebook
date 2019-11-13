@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.58.2" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/prism.css" media="none" onload="this.media='all';">
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <style id="inverter" media="none">
+    html { filter: invert(100%) }
+    * { background-color: inherit }
+    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
+  </style>
+
+
+
+  <title>Formative Feedback | Conscious.ly</title>
+</head>
+
+  <body>
+    <a href="#main">skip to content</a>
+    <svg style="display: none">
+  <symbol id="bookmark" viewBox="0 0 40 50">
+   <g transform="translate(2266 3206.2)">
+    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
+   </g>
+  </symbol>
+
+  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
+   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
+   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
+  </symbol>
+
+  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
+    <g transform="translate(0 -875.2)">
+     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
+    </g>
+  </symbol>
+
+  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
+   <g transform="translate(0 -875.2)">
+    <g>
+     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
+     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
+     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
+     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
+     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
+     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="info" viewBox="0 0 41.667 41.667">
+   <g transform="translate(-37.035 -1004.6)">
+    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
+    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
+    <g transform="translate(-1.1273 -1010.2)">
+     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+  </symbol>
+
+  <symbol id="menu" viewBox="0 0 50 50">
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
+   </symbol>
+
+   <symbol id="link" viewBox="0 0 50 50">
+    <g transform="translate(0 -1002.4)">
+     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
+      <g>
+       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
+      </g>
+     </g>
+    </g>
+  </symbol>
+
+  <symbol id="doc" viewBox="0 0 35 45">
+   <g transform="translate(-147.53 -539.83)">
+    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
+    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
+     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
+     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+    </g>
+   </g>
+ </symbol>
+
+ <symbol id="tick" viewBox="0 0 177.16535 177.16535">
+  <g transform="translate(0 -875.2)">
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
+  </g>
+ </symbol>
+</svg>
+
+    <div class="wrapper">
+      <header class="intro-and-nav" role="banner">
+  <div>
+    <div class="intro">
+      <a class="logo" href="index.html" aria-label="Conscious.ly home page">
+        <img src="images/logo.svg" alt="">
+      </a>
+      <p class="library-desc">
+
+          Bringing  back human consciousness front and center
+
+      </p>
+    </div>
+    <nav id="patterns-nav" class="patterns" role="navigation">
+  <h2 class="vh">Main navigation</h2>
+  <button id="menu-button" aria-expanded="false">
+    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+      <use xlink:href="#menu"></use>
+    </svg>
+    Menu
+  </button>
+
+  <div>
+      <label for="themer">
+        dark theme: <input type="checkbox" id="themer" class="vh">
+        <span aria-hidden="true"></span>
+      </label>
+    </div>
+
+  <ul id="patterns-list">
+
+    <li class="pattern">
+      <a href="index.html" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Home</span>
+      </a>
+    </li>
+
+    <li class="pattern">
+      <a href="proposal.html" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Proposal</span>
+      </a>
+    </li>
+
+    <li class="pattern">
+      <a href="low-fidelity-prototype.html">
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Low-fidelity Prototype</span>
+      </a>
+    </li>
+
+    <li class="pattern">
+      <a href="high-fidelity-prototype.html">
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">High-fidelity Prototype</span>
+      </a>
+    </li>
+
+    <li class="pattern">
+      <a href="formative-feedback.html">
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Formative Feedback</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+  </div>
+</header>
+      <div class="main-and-footer">
+        <div>
+
+  <main id="main">
+    <h1>Formative Feedback</h1>
+
+    <h3>Testing</h3>
+    <hr>
+    <p>For our Formative Feedback, we were assigned the evaluation of <a href="http://www.cim.mcgill.ca/~jer/courses/hci/project/2019/cim.mcgill.ca/~dmarino/hci/notebook/compproto/index.html">Embedded Art.</a></p>
+    <p>As recommended in the formative feedback, user testing was performed on large groups in a “naturalistic environment”, varied under three different settings: </p>
+
+    <ol>
+      <li>In a semi-social group studying environment</li>
+      <li>In a social “rest and relaxation” lounge</li>
+      <li>At a gathering in a restaurant</li>
+    </ol>
+
+    <p>This exposed the prototype to a total of <b>66</b> users. At least two testers were present at all times to oversee the prototype; one tester kept watch of the prototype while the other recorded results. Moreover, quantitative and qualitative evaluation criteria from the high-fidelity prototype section were converted into a Google form to make it easier to collect data. Note that in the form, “Person 1” refers to the same user, and details of users who did not interact with the system at all were omitted (but their presence was noted). The results of the test in each setting can be viewed individually in the link below. Lastly, a video recording of the test sessions was also cross-referenced where it was possible to record.</p>
+
+    <ul>
+      <li><a href="https://docs.google.com/forms/d/1_7fuk0mamA2YGnxthwPda-Hq14soLmWPeYkaGc5QMJc/edit?usp=sharing">Testing Form</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1DBcAw2KGN6XnlIyWmDd7sFrF0CtEdtUnDTZTaigDWfU/edit?usp=sharing">Test Results</a></li>
+    </ul>
+
+    <h3>Results and Analysis</h3>
+    <hr>
+
+    <h4>Quantitative Results</h4>
+
+    <p>
+      <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 385.33px;"><img alt="" src="images/formative-feedback/user-interactions-with-prototype.png" style="width: 624.00px; height: 385.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="Points scored"></span>
+    </p>
+
+    <p>
+      <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 385.33px;"><img alt="" src="images/formative-feedback/user-interactions-with-users.png" style="width: 624.00px; height: 385.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="Points scored"></span>
+    </p>
+
+    <h4>Qualitative Results</h4>
+
+    <p>
+      Overall, it seems that using the prototype was an enjoyable experience for the users, as they used it as both a utility (a charging station) and it sparked interesting conversations related to the art piece.
+    </p>
+
+    <p>At times, users expressed frustration by the lack of charging ports. The main issue faced when testing was the users’ inability to recognize what function the prototype was meant to serve. One user thought it was “a shrine for your laptop”. Another user (shown in the video below at 0:55) completely ignored the prototype and sat down in front of it.</p>
+
+    <video width="640" height="480" controls>
+      <source src="https://drive.google.com/uc?export=download&confirm=9wBX&id=1pevdxV6MrHDWdF6qPPlYsN71i_k2z7vb" type='video/mp4'>
+    </video>
+    <p><i>If the video does not play (which will most likely be the case due to it being hosted on McGill's server), you can still view the video <a href="https://drive.google.com/open?id=1pevdxV6MrHDWdF6qPPlYsN71i_k2z7vb">here</a>.</i></p>
+    
+    <p>A remark that was made multiple times was “I feel like my phone might get hacked”. This is quite understandable, and likely due to the recent buzz in the news about “juice jacking”, where charging stations are set up by hackers to steal data from users’ devices. Security concerns aside, one of the main similarities amongst the test subjects was their appreciation for the charging feature that the prototype provided. Conversely, the key difference observed between the three tests was that users in the group-study setting did not entertain the art or conversational aspect of the prototype at all, only seeming to see it as a charging station, while users in the other groups did.</p>
+    
+    <h4>Failed Tests</h4>
+
+    <p>Though this test wasn’t one of the original ones outlined by the design team, the following test under the Usability Goal 2 (The users should quickly understand that the system requires their phones) implied that at least one user would plug their phone in without prompt:</p>
+    
+    <p>
+      <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 240.00px;"><img alt="" src="images/formative-feedback/usability-goal.png" style="width: 624.00px; height: 240.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
+    </p>
+    
+    <p>Based on our observations during the test and our interaction with the users afterwards, some of the reasons users didn’t plug their phones in without prompting were:</p>
+    <ul>
+      <li>Security - mentioned above</li>
+      <li>The look of the frame - some users felt that were the frame made out of a sleeker and less “unfinished” material such as cardboard, they would have been more inclined to approach it. This was predicted by the design team, and they had already suggested that they may even take a frameless approach in later versions</li>
+      <li>The positioning of the device - in the second test, the users mentioned that because the device was placed near another student, the users thought it belonged to someone and wasn’t meant to be approached</li>
+      <li>The image itself - some users didn’t understand what the prototype was; and thought the screen was broken</li>
+    </ul>
+
+    <p>Note that there were other usability issues we came across, which we have detailed and ranked by priority in the Design Critique section.</p>
+    
+    <h4>Heuristic Evaluation</h4>
+
+    <p>The following is the list of Heuristics we evaluated based on the high-fidelity prototype heuristic evaluation criteria, omitting those that were not considered a priority. Overall, we found that the heuristics chosen were appropriate for evaluating this prototype. We categorized each heuristic into either a violation or a strength and gave rating based Jakob Nielson four-step scale:    </p>
+    <ol>
+      <li>This is not a usability problem at all</li>
+      <li>Cosmetic problem only: need not be fixed unless extra time is available on project</li>
+      <li>Minor usability problem: fixing this should be given low priority</li>
+      <li>Major usability problem: important to fix, so should be given high priority</li>
+      <li>Usability catastrophe: imperative to fix this before product can be released</li>
+    </ol>
+
+    <table class="c17"><tbody><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Heuristic</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Severity &amp; Rating</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Description</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c2">Visibility of system status</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Violation - 5 </span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">There is no signifier as to what the status of the system is when there are no phones plugged in: the screen simply remains blank and does not provide users with any visibility to it’s status. When the image is starting to become more visible, users are not able to intuitively form a conceptual model that maps each plugged in phone to a slightly clearer image</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c2">Match between system and the real world</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Strength - 2</span></p><p class="c5 c1"><span class="c6 c2"></span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">While the system fit in a casual environment for the most part, as stated earlier some users were put off by the appearance of the prototype </span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c2">User control and freedom</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Strength - 2</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">While users were free to plug-in and remove their phones as they please, this could be hampered by the limited number of ports and the physical placement of the prototype</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Error prevention </span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Strength - 1</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">The prototype was designed in a way that it’s almost impossible for a user to misuse it or perform an error</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Recognition rather than recall</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Violation - 3</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Despite the ubiquitous use of USB charging stations across campus and users’ ability to recognize that they need to plug-in their phones, users’ were still unable to make sense of the purpose of the screen, which was compounded by the lack of any signifiers</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Aesthetic and minimalist design</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Strength - 1</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">The prototype possessed the minimum amount of design elements required to carry out it’s functionality</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Help and documentation</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Violation - 5</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">Of the total 66 users tested, not a single user approached the system without some kind of prompt or explanations from the testing team. This implies that there’s a strong need for a mechanism to aid users in understanding the intended purpose of the system </span></p></td></tr></tbody></table>
+
+    <h3>Test Plan Critique</h3>
+    <hr>
+
+    <h4>Test Cases vs Usability Goals</h4>
+
+    <p>The design team suggested 6 quantitative tests which corresponded to 5 usability goals. Our evaluation of their relationship is as follows:</p>
+
+    <table class="c17"><tbody><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c8"><span class="c6 c7">Quantitative Test</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c8"><span class="c6 c7">Usability Goal</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c8"><span class="c6 c7">Evaluation of test with regards to the associated UG</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">Number of users that go to the frame</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c2">[UG 1] Users should quickly notice the presence of the system</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">This test is appropriate for its respective usability goal.</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">Average time it takes for a user to go to picture frame</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">[UG 1] Users should quickly notice the presence of the system</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">This test is appropriate for its respective usability goal.</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">Time spent for users to start connecting their phones</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c2">[UG 2] The users should quickly understand that the system requires their phones</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c2">We (the evaluation team) feel that this test is incomplete, as it assumes that users </span><span class="c2 c21">would </span><span class="c6 c2">connect their phones. As a precursor to this test, another test should have been associated to this usability goal: the number of people who did connect their phone to the prototype. When we did our testing, we made sure to add that in.</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">Number of users that speak to each other</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c2">[UG 3] The system should disengage users from their phones</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">This test is appropriate for its respective usability goal</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">If they speak to each other after finishing with the frame</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c2">[UG 4] The system should encourage conversation</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">This test is appropriate for its respective usability goal</span></p></td></tr><tr class="c4"><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c6 c2">Time spent at picture frame</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c10"><span class="c2">[UG 5] The system should be fun and/or entertaining</span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c5"><span class="c6 c2">We feel that this test is not fully representative of the usability goal, as not all time spent at the frame is a result of it being entertaining/fun (for example, even in a social/party setting, users may stay near the frame simply to watch over their phone as it charged). A better-suited quantitative test would be: the amount of time spent at the frame discussing it with others, and/or the number of users who verbally showed interest in the image itself.</span></p></td></tr></tbody></table>
+
+    <p>One addition we suggest for the design team concerning the quantitative tests: provide success/fail metrics and define expectations with regards to each of the tests.</p>
+
+    <h4>Additions to the Test Procedure</h4>
+
+    <p>When carrying out the tests, we followed the guidelines provided by the design team, but also made changes and additions:</p>
+
+    <ul>
+      <li><b>We separated our tests based on differences in setting, as opposed to testing multiple users.</b> It was unclear whether or not we were supposed to test against user population or if we were supposed to record results for each individual user. We felt that setting was the most appropriate factor to differentiate each round of tests, loosely based on user population.</li>
+      <li><b>We distinguished between users who approached the frame but did not plug their phone in, and those who did, and recorded the number of people for both.</b></li>
+      <li><b>We distinguished between users who plugged their phone in without prompting and with prompting.</b> Note that this was in response to the assumption made by the test associated to the second usability goal.</li>
+    </ul>
+
+    <h3>Design Critique</h3>
+    <hr>
+
+    <p>There were several usability issues we came across during the testing phase. We have listed them in the table below, ranked by priority, and have suggested fixes for each.</p>
+
+    <table class="c21"><tbody><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c13"><span class="c2">Usability Issue</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c13"><span class="c2">Priority</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c13"><span class="c2">Suggested Improvement</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Users were unsure of how to engage with the prototype</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">High</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Have a signifier that indicates what the system does. Possibly include instructions on the side to help users form mental models</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Once users were engaged, they found there weren’t enough ports</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">High</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Add more ports</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Users had a variety of different phones and found the variety of cables was lacking </span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">High</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Add a variety of charging ports. Note that this may already be accounted for by the design team, as they did not supply the cables; this was done by the evaluation team.</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Users were put off by the rough/unfinished frame</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Medium</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Design a sleeker frame, hide the wiring; make it more in line “modern art”</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Some users thought of the device as simply a charging station and did not see its full functionality</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Medium</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Add more utility (for example, UV light for disinfecting)</span></p></td></tr><tr class="c7"><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Users seemed bored once they figured out what the image was - because of that may not approach the frame again</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Low</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c6"><span class="c3">Display more images; rotate through different ones each time, and possibly allow for the user to upload their own pictures </span></p></td></tr></tbody></table>
+
+  </main>
+
+          <footer role="contentinfo">
+
+</footer>
+
+        </div>
+      </div>
+    </div>
+    <script src="js/prism.js"></script>
+<script src="js/dom-scripts.js"></script>
+
+
+
+
+
+  </body>
+</html>
