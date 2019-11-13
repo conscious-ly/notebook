@@ -8,10 +8,6 @@
   <meta name="generator" content="Hugo 0.58.2" />
 
 
-      <meta name="description" content="Bringing  back human consciousness front and center">
-
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -34,9 +30,7 @@
 
 
 
-
-
-  <title>Conscious.ly</title>
+  <title>Alpha Prototype | Conscious.ly</title>
 </head>
 
   <body>
@@ -157,12 +151,12 @@
         dark theme: <input type="checkbox" id="themer" class="vh">
         <span aria-hidden="true"></span>
       </label>
-  </div>
+    </div>
 
   <ul id="patterns-list">
 
     <li class="pattern">
-      <a href="index.html" aria-current="page">
+      <a href="index.html" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -214,52 +208,93 @@
         <div>
 
   <main id="main">
-    <h1></h1>
+    <h1>Alpha Prototype</h1>
 
-
-<h3 id="overview">Overview</h3>
-
-<p>This is the term project for <a href="http://www.cim.mcgill.ca/~jer/courses/hci/index.html">ECSE 424 - Human-Computer Interaction</a>. We will conceptualize, design, implement, test, and refine a system to <strong>help tackle probelmatic internet usage</strong>, which will evolve from a paper description, to a simple prototype, and finally to a functional system.</p>
-
-<hr />
-
-<h3 id="the-problem">The Problem</h3>
-
-<p>The pervasiveness of technology in our everyday lives is both a blessing and a curse. On one hand, all our needs - whether it be communication, food, shopping, or transportation - are met with the push of a button. And yet, for all these benefits, or perhaps as a result of the convenience they afford, we use technology in a very unhealthy way, leading many to feel constantly distracted, isolated, and generally worst off.</p>
-
-<p>For starters, we spend far too much time glued to our devices - the average adult <a href="https://www.kleinerperkins.com/perspectives/internet-trends-report-2018">spends 5.9 hours a day on the internet</a> - that&rsquo;s over a third of our waking lives.</p>
-
-<p>This is exasperated by the tendency of large tech firms that rely on ad-revenue to incentivize users to use their platforms as long as possible via subtle cognitive hacks, effectively pushing conscious thought aside in favor of unconscious, instinctive actions.</p>
-
-<p>We want to bring back consious thought to the forefront, empowering users to have more control over their use of technology.</p>
-
-<hr />
-
-<h3 id="the-team">The Team</h3>
-
-<p align="center">
-<img src="A, Amir.jpeg" height="250">
+    <h3>Design Evolution</h3>
+    <p>During the formative feedback stage, an evaluation team (team GCL) conducted user tests on the computer prototype of our
+    desktop application. http://www.cim.mcgill.ca/~jer/courses/hci/project/2019/www.ece.mcgill.ca/~yliu240/hci/feedback.html
+    They provided us with usability issues and, based on those issues, suggested improvements to the design. Below we have
+    outlined the modifications we made to the desktop version of the app, highlighting which usability issues they address.
+    Note that though we did not explicitly mention which of the suggested design improvements the modifications are
+    associated to (as they are themselves based on the usability issues, which we have mentioned), we did take the
+    suggestions seriously and either made the changes exactly as suggested, or took inspiration from them.
 </p>
 
-<p align="center">
-<a href="https://linkedin.com/in/amir-abushanab">Amir Abushanab</a>
-</p>
+    <h4>Desktop Version</h4>
+    <ol>
+      <li>The task entry field has been modified to say “Select or write your task here” to address the <u>usability</u> issue #1 found
+      during user testing of the computer prototype which said that users seemed confused about how to input a task.</li>
 
-<p align="center">
-<img src="K, Shirin.jpg" height="250">
-</p>
+      <li>The test entry field has been modified so that the user can only select/write a single task; this is both a design
+      change based on our further research of multitasking and its disadvantages, as well as a response that eradicates
+      <u>usability issue #5</u>, which stated that users got confused having to press “enter” after typing in a task otherwise it
+      wouldn’t save/it would disappear. Now, since there is only one task allowed at a time, the user does not need to press
+      enter; whatever is in the text field (be it a selection they clicked on or a task they typed in themselves) when the
+      user selects begin will be the task associated to that session of the Conscious.ly app.</li>
 
-<p align="center">
-<a href="">Shirin Kasaei</a>
-</p>
+      <li>The widget has been changed significantly:
+        <ol>
+          <li>
+            We have now implemented a tray icon, which when clicked on displays the widget. It changes colour as the time decreases.
+            Both the new implementation as well as its colour gradation address <u>usability issue #10</u> pointed out by the evaluation
+            team (that the widget went unused because people just had it in the background under other windows).
+          </li>
 
-<p align="center">
-<img src="U, Sarah.jpg" height="250">
-</p>
+          <li>
+            It contains a link back to the preferences/settings page, which addresses <u>usability issue #3</u>; users being unable to find
+            out how to modify their preferences after the task session begins. It also addresses <u>usability issue #6</u>, which stated
+            that when the user was able to modify settings during an active session, it reset the timer. We have made it such that
+            the timer & task do not get reset when settings are modified.
+          </li>
 
-<p align="center">
-<a href="https://linkedin.com/in/sarah-usman">Sarah Usman</a>
-</p>
+          <li>
+            It contains a stop button which takes the user back to the task/time page, allowing the user to fully change what they
+            want to do (both task and time). This addresses <u>usability issue #2</u>, which pointed out that the user was not able to
+            recover from mistakes.
+          </li>
+        </ol>
+
+      </li>
+
+      <li>Modifications were made to mitigate <u>usability issue #4</u>: if a user had a “distraction website” open in another tab, and
+      then opened a new tab and went to another website which was not marked as distracting, the distraction popup would
+      appear again (as many times as the user tried to open new websites; due to one tab being open on a “distraction
+      website”). The change now makes it so that the distraction popup will only appear the first time, as long as the user
+      selects “yes I want to be distracted” or closes the “distraction website” tab. If the user selects no, but still has a
+      “distracting website” open in another tab.</li>
+
+    </ol>
+    <h4>Mobile Version</h4>
+
+    <p>For the mobile application, we did not have the evaluation team perform user testing, for two reasons:</p>
+    <ol>
+      <li>
+        Our focus is on the desktop application; the mobile application is something we want to have in the future to satisfy
+        our cross-platform goal of being able to prevent distraction on multiple devices
+      </li>
+      <li>
+        The application prototype functioned only through the Android emulator (on a desktop) and not on a mobile device, which
+        we felt was not realistic enough to test usability
+      </li>
+      <p>
+        As a result, we do not have user feedback on the mobile device, but are continuing to work on it in the background.
+        Additions include welcome/introductory instruction screens upon installation of the app, and minor changes to the user
+        interface. Screenshots have been updated in/added to the user manual.
+      </p>
+    </ol>
+
+    <h3>Prototype Implementation</h3>
+    <ul>
+      <li><b><i><a href="https://github.com/conscious-ly/desktop-client">Desktop Client:</a></i></b></li> Runs on all desktop environments, but only tested on Ubuntu. Browser support is also only limited to Chrome, and will likely remain so for the duration of the prototyping phase.
+
+      <li><b><i><a href="https://github.com/conscious-ly/app">Mobile Client:</a></b></i></li> Runs only on Android; however can be emulated on a desktop.
+    </ul>
+
+    <h3>User Manuals</h3>
+    <ol>
+    <li><a href="https://docs.google.com/document/d/1RS_SA3T9M4E0-7i27HhQe-m5xHlZ68vw7lNs3JzAHwc/edit?usp=sharing">User Manual (New)</a></li>
+    <li><a href="https://docs.google.com/document/d/1Es6BPAAMfDn3egYvYkid6hVlCJUYqno1eHSrDkrwwM8/edit?usp=sharing">User Manual (Old)</a></li>
+    </ol>
 
   </main>
 
