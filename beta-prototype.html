@@ -227,25 +227,55 @@
     <h1>Beta Prototype</h1>
 
     <h3>Design Evolution</h3>
-    <p></p>
+    <p>After developing our alpha system, we did some informal tests ourselves and showed the two applications (desktop and
+    mobile clients) to a few friends and colleagues to identify any more bugs and usability issues. The build-up to the beta
+    system consisted of fixing those issues and making those modifications, as outlined below. These can also be seen (in
+    less detail; more issue-based than usability-based) on our Google Sheets <a href="https://drive.google.com/open?id=1Hcimw9TKAOUVS6y-QIYnWQV8vj7_otmYmHBC24wSKO4">issue-tracking board.</a> Note that these new
+    changes have yet to be tested and we are wary that a few, though they may work well, may introduce new and unrelated
+    bugs.</p>
 
+    <p>Three main changes to the application were as follows:</p>
     <h4>Desktop Version</h4>
     <ol>
-      <li></li>
+      <li><b><u>The two applications (desktop and mobile) were synchronized</u></b> so that when a user sets a task and time on one and
+      activates a session on one application, the same session is also activated in the other application. From a usability
+      perspective, this is our most important implemented feature; as one of our main objectives for the application was to
+      train users to avoid all digital distractions, and in today’s age most users have multiple devices through which they
+      get distracted. If social media is synced on multiple devices, our application should be too.</li>
+      <ul>
+        <li><i>Note: </i>The settings still have to be set individually on each app (as the desktop application allows the user to set
+        websites as distracting while the mobile application allows users to set applications as distracting. However, these
+        preferences do remain set until the user next changes them, even after the user closes the application, so if the user
+        has the same set of websites/applications that they consider distracting no matter what work they are trying to get
+        done, they will only have to select these once, the first time they use the application.</li>
+      </ul>
 
-      <li></li>
+      <li><b><u>The mobile user interface has been refined and modified</u></b> to increase parity between it and the desktop application. This
+      was done to satisfy Nielson’s eighth heuristic of usability and design: aesthetic and minimalist design. In the alpha
+      version, the desktop user interface underwent several changes in appearance, mainly based on user feedback about the
+      colours being too flashy for an application that was meant to help users avoid and overcome distractions. The mobile
+      version had yet to be changed, and when we had showed the two applications to some colleagues, they found the disparity
+      between apps extremely off-putting; particularly stating that they “wouldn’t trust” applications that didn’t look
+      somewhat related on their multiple platforms.</li>
+
+      <li><b><u>First-time tutorial screens have been added to the desktop application.</b></u> This was due to immensely positive feedback from
+      colleagues after viewing the tutorial screens on the mobile application, stating that it would make the application much
+      easier to navigate as the user is essentially presented with a conceptual model upfront upon first installation. This
+      means that the users would go through the application already knowing the basic features/functions, and so certain
+      signifiers would be more obvious as affordances than if the users had no idea what they were supposed to be looking for.</li>
+
+      <p>Other minor change include:</p>
+
+      <li><b><u>Widget colour gradation has been added to the mobile application.</u></b> This was again an attempt to increase parity between
+      the two applications; from a usability point of view, it would be very confusing to adopt a certain convention on one
+      platform (i.e. the colour green for most of the time remaining, yellow for less than half the time remaining, and red
+      for less than a quarter of the time remaining) and then, when they have come to understand and expect it, it doesn’t
+      exist on the other platform.</li>
+
+      <li><b><u>Automatic time-remaining notifications were also added to the mobile application,</u></b> for the same reason as above.</li>
     </ol>
-    <h4>Mobile Version</h4>
 
-    <p>As stated previously</p>
-    <ol>
-      <li>
-      </li>
-      <li>
-      </li>
-    </ol>
-
-    <h3>Prototype Implementation</h3>
+    <h3>Prototype Revisions</h3>
     <ul>
       <li><b><i><a href="https://github.com/conscious-ly/desktop-client">Desktop Client:</a></i></b></li> Runs on all desktop environments, but only tested on Ubuntu. Browser support is also only limited to Chrome, and will likely remain so for the duration of the prototyping phase.
 
@@ -254,8 +284,8 @@
 
     <h3>User Manuals</h3>
     <ol>
-    <li><a href="">User Manual (V3)</a></li>
-    <li><a href="https://docs.google.com/document/d/1RS_SA3T9M4E0-7i27HhQe-m5xHlZ68vw7lNs3JzAHwc/edit?usp=sharing">User Manual (V2)</a></li>
+    <li><a href="https://drive.google.com/open?id=1tGXIn7IHHNGUHSShK50o_e0E-4LiODhPxuDPt-fxhg4">User Manual (V3)</a></li>
+    <li><a href="https://drive.google.com/open?id=1RS_SA3T9M4E0-7i27HhQe-m5xHlZ68vw7lNs3JzAHwc">User Manual (V2)</a></li>
     <li><a href="https://docs.google.com/document/d/1Es6BPAAMfDn3egYvYkid6hVlCJUYqno1eHSrDkrwwM8/edit?usp=sharing">User Manual (V1)</a></li>
     </ol>
 
